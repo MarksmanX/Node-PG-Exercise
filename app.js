@@ -16,6 +16,10 @@ app.use("/companies", cRoutes);
 const iRoutes = require("./routes/invoices");
 app.use("/invoices", iRoutes);
 
+// All industries routes found at /industries
+const fRoutes = require("./routes/industries");
+app.use("/industries", fRoutes);
+
 /** 404 handler */
 
 app.use(function(req, res, next) {
